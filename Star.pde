@@ -1,7 +1,7 @@
 class Star //note that this class does NOT extend Floater
 {
 	private int starX,starY,starR,starG,starB,starSize;
-  	Star(){
+  	public Star(){
   		starX =  (int)(Math.random()*1000+1);
   		starY = (int)(Math.random()*1000+1);
   		starR= (int)(Math.random()*255+1);
@@ -11,6 +11,7 @@ class Star //note that this class does NOT extend Floater
  	}
  	public void show(){
  		fill(starR,starG,starB);
+ 		stroke(starR,starG,starB);
  		ellipse(starX,starY,starSize,starSize);
  	}
 }
